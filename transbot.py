@@ -1,7 +1,7 @@
 import discord, requests, os, random
 
-ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', "ODE5MDgyMjAyNDA2NzE1NDUy.YEhbvg.gzlqtbc1vwSVuhvfuQGMKsxSBNw") #DiscordBotAccessToken
-TRANSAPI_URL = os.environ.get('TRANSAPI_URL', "https://script.google.com/macros/s/AKfycbyXEyfoXh-EsJO0YukcHLOt6Fb_oNAqx80-K3bZilOWb0L5IYKL/exec") #GoogleTransApiUrl
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN') #DiscordBotAccessToken
+TRANSAPI_URL = os.environ.get('TRANSAPI_URL') #GoogleTransApiUrl
 
 intents = discord.Intents.default()
 intents.members = True
