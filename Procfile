@@ -1,1 +1,1 @@
-bot: python transbot.py
+discordbot: python transbot.py
