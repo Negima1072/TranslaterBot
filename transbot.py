@@ -1,4 +1,4 @@
-import discord, requests, os, random
+import discord, requests, os, random, datetime
 
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN') #DiscordBotAccessToken
 TRANSAPI_URL = os.environ.get('TRANSAPI_URL') #GoogleTransApiUrl
@@ -20,7 +20,7 @@ Send author information
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name='Translater | -t help'))
+    await client.change_presence(activity=discord.Game(name='Translater | -t help', start=datetime.datetime.now()))
     print("On Login")
 
 @client.event
